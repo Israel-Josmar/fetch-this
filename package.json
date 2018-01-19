@@ -1,0 +1,26 @@
+{
+  "name": "fetch-this",
+  "version": "0.1.0",
+  "description": "Make requests based on stored configuration",
+  "license": "MIT",
+  "author": "Josmar Dias",
+  "homepage": "https://github.com/josmardias/fetch-this#readme",
+  "bugs": {
+    "url": "https://github.com/josmardias/fetch-this/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josmardias/fetch-this.git"
+  },
+  "keywords": [
+    "fetch",
+    "http",
+    "request"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
