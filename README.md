@@ -1,6 +1,8 @@
 # fetch-this
 Make requests based on stored configuration
 
+> :construction: This lib is under development. There is no stable version yet.
+
 This tool allows you to express fetch requests as a json.
 Some use cases:
 - avoid repeating yourself by looping into a colection of fetchs to be performed
