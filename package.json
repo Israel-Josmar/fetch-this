@@ -22,7 +22,9 @@
     "fix": "fixpack && eslint . --fix --ignore-pattern !/.*rc.js",
     "test": "jest --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "babel-preset-env": "^1.6.1",

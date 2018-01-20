@@ -16,7 +16,7 @@ npm install fetch-this
 ## Roadmap
 
 - [x] accept a config object to perform a GET request
-- [ ] dynamic values
+- [x] dynamic values
   - accept payload for interpolation
   - compile config object values as template passing the payload as template data
 - [ ] add query params to the config, like `{ query: { a: 'b' } }`
