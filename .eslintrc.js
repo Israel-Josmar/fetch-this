@@ -16,4 +16,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
+  globals: {
+    fetch: false,
+  },
 }
