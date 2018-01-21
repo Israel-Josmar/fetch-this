@@ -19,6 +19,7 @@ npm install fetch-this
 - [x] dynamic values
   - accept payload for interpolation
   - compile config object values as template passing the payload as template data
+- [ ] add createFetch, same API as fetch, returns a fetch-this config
 - [ ] add query params to the config, like `{ query: { a: 'b' } }`
 - [ ] add method to the config, like `{ method: POST }` (GET by default)
 - [ ] add form params to the config, like `{ form: { a: 'b' } }`
