@@ -17,15 +17,22 @@
     "http",
     "request"
   ],
-  "main": "index.js",
+  "main": "./dist/cjs/fetch-this.js",
+  "module": "./dist/esm/fetch-this.js",
   "scripts": {
+    "build": "rm -rf dist && npm run build:base && npm run build:module",
+    "build:base": "BABEL_ENV=cjs babel src -d dist/cjs --ignore '**/*.test.js'",
+    "build:module": "BABEL_ENV=esm babel src -d dist/esm --ignore '**/*.test.js'",
     "fix": "fixpack && eslint . --fix --ignore-pattern !/.*rc.js",
-    "test": "jest --watch"
+    "prepare": "npm run test:prepublish && npm run build",
+    "test": "jest --watch",
+    "test:prepublish": "jest"
   },
   "dependencies": {
     "handlebars": "^4.0.11"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.15.0",
