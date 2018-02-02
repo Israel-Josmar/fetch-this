@@ -17,6 +17,7 @@ npm install fetch-this
 ## Roadmap
 
 - [x] accept a config object to perform a GET request
+- [x] add `getResult()` that maps a response promise to a single value inside it
 - [ ] add createFetch, same API as fetch, returns a fetch-this config
 - [ ] add query params to the config, like `{ query: { a: 'b' } }`
 - [ ] add method to the config, like `{ method: POST }` (GET by default)
