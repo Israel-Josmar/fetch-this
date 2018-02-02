@@ -1,6 +1,6 @@
 {
   "name": "fetch-this",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Make requests based on stored configuration",
   "license": "MIT",
   "author": "Josmar Dias",
