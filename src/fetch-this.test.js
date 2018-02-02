@@ -2,13 +2,13 @@ import nock from 'nock'
 
 import { fetchThis } from './fetch-this'
 
+const config = {
+  url: 'http://localhost/test',
+}
+
+const mockResponse = { nested: { result: 111 } }
+
 test('simple request', async () => {
-  const config = {
-    url: 'http://localhost/test',
-  }
-
-  const mockResponse = { nested: { result: 111 } }
-
   nock('http://localhost')
     .get('/test')
     .reply(200, mockResponse)
