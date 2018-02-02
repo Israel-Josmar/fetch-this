@@ -1,5 +1,5 @@
 export const fetchThis = async (config) => {
-  const url = config.url
+  const url = config.fetch.url
 
   return fetch(url)
 }

@@ -3,7 +3,9 @@ import nock from 'nock'
 import { fetchThis } from './fetch-this'
 
 const config = {
-  url: 'http://localhost/test',
+  fetch: {
+    url: 'http://localhost/test',
+  },
 }
 
 const mockResponse = { nested: { result: 111 } }
