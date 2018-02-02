@@ -28,9 +28,6 @@
     "test": "jest --watch",
     "test:prepublish": "jest"
   },
-  "dependencies": {
-    "handlebars": "^4.0.11"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
