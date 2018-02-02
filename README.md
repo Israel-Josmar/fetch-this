@@ -13,6 +13,7 @@ Some use cases:
 ```
 npm install fetch-this
 ```
+
 ## Roadmap
 
 - [x] accept a config object to perform a GET request
@@ -20,3 +21,4 @@ npm install fetch-this
 - [ ] add query params to the config, like `{ query: { a: 'b' } }`
 - [ ] add method to the config, like `{ method: POST }` (GET by default)
 - [ ] add form params to the config, like `{ form: { a: 'b' } }`
+- [ ] add headers to the config, like ` headers: { 'X-Forwarded-For': 'proxy1' } `
