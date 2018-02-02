@@ -1,7 +1,5 @@
-const fetchThis = async (config) => {
+export const fetchThis = async (config) => {
   const url = config.url
 
   return fetch(url)
 }
-
-export default fetchThis

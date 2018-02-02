@@ -1,6 +1,6 @@
 import nock from 'nock'
 
-import fetchThis from './fetch-this'
+import { fetchThis } from './fetch-this'
 
 test('simple request', async () => {
   const config = {
