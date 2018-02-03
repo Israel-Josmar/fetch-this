@@ -23,7 +23,7 @@
     "build": "rm -rf dist && npm run build:base && npm run build:module",
     "build:base": "BABEL_ENV=cjs babel src -d dist/cjs --ignore '**/*.test.js'",
     "build:module": "BABEL_ENV=esm babel src -d dist/esm --ignore '**/*.test.js'",
-    "fix": "fixpack && eslint . --fix --ignore-pattern !/.*rc.js",
+    "fix": "fixpack && eslint . --fix --max-warnings 0 --ignore-pattern !/.*rc.js",
     "prepublishOnly": "npm run test:prepublish && npm run build",
     "test": "jest --watch",
     "test:prepublish": "jest"
