@@ -4,13 +4,13 @@
   "description": "Make requests based on stored configuration",
   "license": "MIT",
   "author": "Josmar Dias",
-  "homepage": "https://github.com/josmardias/fetch-this#readme",
+  "homepage": "https://github.com/Israel-Josmar/fetch-this#readme",
   "bugs": {
-    "url": "https://github.com/josmardias/fetch-this/issues"
+    "url": "https://github.com/Israel-Josmar/fetch-this/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/josmardias/fetch-this.git"
+    "url": "git+https://github.com/Israel-Josmar/fetch-this.git"
   },
   "keywords": [
     "fetch",
