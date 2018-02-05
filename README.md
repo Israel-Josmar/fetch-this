@@ -14,6 +14,35 @@ Some use cases:
 npm install fetch-this
 ```
 
+## Usage
+Let's assume:
+```bash
+$ curl http://localhost:9876/test
+{"nested":{"some":{"values":[11,13,17]}}}
+```
+So, we can do:
+```javascript
+import {
+  fetchThis,
+  getResult,
+} from 'fetch-this'
+
+const config = {
+  fetch: {
+    url: 'http://localhost/test',
+  },
+  result: 'nested.some.values[2]',
+}
+
+// `fetchThis()` returns a fetch()` response promise, you can just use it as you wish
+const response = await fetchThis(config, payload)
+
+// or you can use `getResult()` for a promise to the value you really want
+const value = await getResult(response, config)
+
+console.log(value) // 17
+```
+
 ## Roadmap
 
 - [x] accept a config object to perform a GET request
