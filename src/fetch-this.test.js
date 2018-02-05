@@ -16,7 +16,7 @@ test('simple request', async () => {
     .get('/test')
     .reply(200, mockResponse)
 
-  const response = await fetchThis(config)
+  const response = await fetchThis(config.fetch)
   const json = await response.json()
 
   expect(json).toEqual(mockResponse)
@@ -28,7 +28,7 @@ test('get proper result', async () => {
     .reply(200, mockResponse)
 
   const response = await fetch('http://localhost/test')
-  const value = await getResult(response, config)
+  const value = await getResult(response, config.result)
 
   expect(value).toEqual(17)
 })

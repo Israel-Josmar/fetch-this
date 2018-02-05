@@ -1,17 +1,17 @@
 import get from 'lodash.get'
 
-export const fetchThis = async (config) => {
-  const url = config.fetch.url
+export const fetchThis = async (fetchConfig) => {
+  const url = fetchConfig.url
 
   return fetch(url)
 }
 
-export const getResult = async (response, config) => {
+export const getResult = async (response, resultConfig) => {
   const json = await response.json()
 
-  if (!config.result) {
+  if (!resultConfig) {
     return json
   }
 
-  return get(json, config.result)
+  return get(json, resultConfig)
 }
