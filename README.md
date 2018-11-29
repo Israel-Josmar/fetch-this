@@ -29,9 +29,9 @@ import {
 
 // `fetchThis()` returns a fetch()` response promise, you can just use it as you wish
 const fetchConfig = {
-  url: 'http://localhost/test',
+  url: 'http://localhost:9876/test',
 }
-const response = await fetchThis(fetchConfig, payload)
+const response = await fetchThis(fetchConfig)
 
 // or you can use `getResult()` for a promise to the value you really want
 const result = 'nested.some.values[2]'
